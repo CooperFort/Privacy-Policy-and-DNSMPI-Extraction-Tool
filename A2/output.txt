@@ -1,0 +1,19 @@
+amustf - Afrim Mustafa
+Client ('127.0.0.1', 58494) connected.
+Broadcasting message: Client ('127.0.0.1', 58494) has connected.
+Broadcasted from server: Client ('127.0.0.1', 58494) has connected.
+Message from ('127.0.0.1', 58494): hi
+Message sent to server: hi
+Broadcasting message from ('127.0.0.1', 58494): ('127.0.0.1', 58494): hi
+Broadcasted from server: ('127.0.0.1', 58494): hi
+Message from ('127.0.0.1', 58494): im good today 
+Message sent to server: im good today 
+Broadcasting message from ('127.0.0.1', 58494): ('127.0.0.1', 58494): im good today 
+Broadcasted from server: ('127.0.0.1', 58494): im good today 
+Message from ('127.0.0.1', 58487): stfu 
+Message sent to server: stfu 
+Broadcasting message from ('127.0.0.1', 58487): ('127.0.0.1', 58487): stfu 
+Broadcasted from server: ('127.0.0.1', 58487): stfu 
+Client ('127.0.0.1', 58494) disconnected unexpectedly.
+Broadcasting message: Client ('127.0.0.1', 58494) has disconnected unexpectedly.
+Broadcasted from server: Client ('127.0.0.1', 58494) has disconnected unexpectedly.

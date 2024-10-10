@@ -13,7 +13,7 @@ def analyze_results(file_path):
     with open(file_path, 'r') as file:
         data = json.load(file)
     
-    throughput = data['end']['sum_received']['bits_per_second'] / 1e6
+    throughput = data['end']['sum_received']['bits_per_second'] / 1e6  # Mbps
     jitter = data['end']['sum']['jitter_ms']
     packet_loss = data['end']['sum']['lost_percent']
 
@@ -23,7 +23,7 @@ def plot_data(results, filename="analysis.png"):
     labels, throughputs, jitters, losses = zip(*results)
     
     plt.figure()
-    plt.plot(labels, throughputs, marker='o', label='Throughput')
+    plt.plot(labels, throughputs, marker='o', label='Throughput (Mbps)')
     plt.xlabel('Bandwidth (Mbps)')
     plt.ylabel('Throughput (Mbps)')
     plt.title('Throughput vs Bandwidth')
@@ -31,20 +31,21 @@ def plot_data(results, filename="analysis.png"):
     plt.savefig(filename)
 
 def main():
-    bandwidth_tests = [10, 25, 50, 64]
-    duration = 10
+    # Updated bandwidths for Task 3
+    bandwidth_tests = [8, 32, 64]
     results = []
 
     for bw in bandwidth_tests:
         run_subprocess(
             ["python3", "network_bottleneck.py", "--bottleneck", str(bw), "--other", "100"],
-            "output-network-config.txt"
+            f"output-tests-{bw}-bandwidth.txt"
         )
         throughput, jitter, packet_loss = analyze_results(f"output-tests-{bw}-bandwidth.txt")
         results.append((bw, throughput, jitter, packet_loss))
     
     plot_data(results)
 
+    # Write observations to file
     with open("observations.txt", "w") as file:
         file.write("Network Performance Observations:\n")
         for bw, throughput, jitter, loss in results:

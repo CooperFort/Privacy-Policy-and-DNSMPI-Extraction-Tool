@@ -69,7 +69,7 @@ def run_topology_tests(bw_bottleneck, bw_other):
 if __name__ == '__main__':
     try:
         subprocess.run(['sudo', 'mn', '-c'], check=True)
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError as e: #
         print(f"Failed to clean Mininet state: {e}")
         exit(1)
 

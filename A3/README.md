@@ -12,31 +12,31 @@ This script creates the network topology and runs tests to ensure the network is
 
 Command to run:
 
-bash
+- bash
 
-python3 network_bottleneck.py --bw_bottleneck <value> --bw_other <value> --time <value>
+- python3 network_bottleneck.py --bw_bottleneck <value> --bw_other <value> --time <value>
 
---bw_bottleneck: Bandwidth of the bottleneck link (default is 10 Mbps).
+- --bw_bottleneck: Bandwidth of the bottleneck link (default is 10 Mbps).
 
---bw_other: Bandwidth of the other links (default is 100 Mbps).
+- --bw_other: Bandwidth of the other links (default is 100 Mbps).
 
---time: Duration of the traffic simulation (default is 10 seconds).
+- --time: Duration of the traffic simulation (default is 10 seconds).
 
 This will create a network with the specified bandwidth settings, perform ifconfig and ping tests, and log the results in files such as:
 
-output-network-config.txt
+- output-network-config.txt
 
-output-ifconfig-h<i>.txt
+- output-ifconfig-h<i>.txt
 
-output-ping-h<i>.txt
+- output-ping-h<i>.txt
 
 Running iPerf Server: server.py
 
 To start the iPerf server, use the following command:
 
-bash
+- bash
 
-python3 server.py --ip <server-ip> --port <server-port>
+- python3 server.py --ip <server-ip> --port <server-port>
 
 This will start the server with the specified IP and port.
 
@@ -44,11 +44,11 @@ Running iPerf Client: client.py
 
 To start the iPerf client, run the following command:
 
-bash
+- bash
 
-python3 client.py --ip <client-ip> --port <client-port> --server_ip <server-ip> --test <tcp/udp>
+- python3 client.py --ip <client-ip> --port <client-port> --server_ip <server-ip> --test <tcp/udp>
 
---test: Use tcp for TCP traffic and udp for UDP traffic.
+- --test: Use tcp for TCP traffic and udp for UDP traffic.
 
 This will generate traffic and save the results as JSON files such as output-<test>-<bottleneck>-<other>.json.
 
@@ -58,9 +58,9 @@ This script runs network simulations with different bandwidth configurations and
 
 Command to run:
 
-bash
+- bash
 
-python3 analyze_perf.py
+- python3 analyze_perf.py
 
 This script will run network_bottleneck.py multiple times with different bottleneck bandwidth values (8 Mbps, 32 Mbps, and 64 Mbps) and generate a plot 
 
@@ -70,25 +70,25 @@ Output Files
 
 Task 1 Outputs:
 
-output-network-config.txt
+- output-network-config.txt
 
-output-ifconfig-h1.txt, output-ifconfig-h2.txt, etc.
+- output-ifconfig-h1.txt, output-ifconfig-h2.txt, etc.
 
-output-ping-h1.txt, output-ping-h2.txt, etc.
+- output-ping-h1.txt, output-ping-h2.txt, etc.
 
 Task 2 Outputs:
 
-output-tcp-<bottleneck>-<other>.json
+- output-tcp-<bottleneck>-<other>.json
 
-output-udp-<bottleneck>-<other>.json
+- output-udp-<bottleneck>-<other>.json
 
 Task 3 Outputs:
 
-analysis.png
+- analysis.png
 
-observations.txt
+- observations.txt
 
-Member Contributions:
+- Member Contributions:
 
 Afrim Mustafa
 

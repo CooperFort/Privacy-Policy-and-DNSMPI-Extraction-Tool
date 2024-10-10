@@ -58,21 +58,22 @@ Member Contributions:
 
 Afrim Mustafa
 - Task 1, 2, Comments
-  Sidney Atkins
+Sidney Atkins
 - Task 3, README
-  Cooper Fart
+Cooper Fart
 - Task 3, README
-  Ben Schlachtenhaufen
+Ben Schlachtenhaufen
 -
 
 Credit Reel:
-  Mininet Introduction Video: https://www.youtube.com/watch?v=tn1-Pxm0ckc
+
+Mininet Introduction Video: https://www.youtube.com/watch?v=tn1-Pxm0ckc
 - How to set up mininet, mininet functions, differences in mininet topologies
-  Mininet Documentation: https://mininet.org/walkthrough/
+Mininet Documentation: https://mininet.org/walkthrough/
 - Explained how to use mininet with Ubuntu VIM and assisted in solving errors found in debugging
-  Iperf Documentation: https://iperf.fr/iperf-doc.php
+Iperf Documentation: https://iperf.fr/iperf-doc.php
 - Background on using Iperf and its commands
-  iPerf Video: https://www.youtube.com/watch?v=kPnhFxiiUQY
+iPerf Video: https://www.youtube.com/watch?v=kPnhFxiiUQY
 - Information on setting up iPerf servers and clients and connecting them
-  Matplotlib Documentation: https://matplotlib.org/stable/index.html
+Matplotlib Documentation: https://matplotlib.org/stable/index.html
 - Background documentation on how to use matplotlib and its functions

@@ -18,36 +18,45 @@ class BottleneckTopo(Topo):
             self.addLink(server, switches[1], bw=other_bw)
         self.addLink(switches[0], switches[1], bw=bottleneck_bw)
 
-def run_topology(bottleneck_bw, other_bw):
-    # Create network topology
+def run_topology_tests(bottleneck_bw, other_bw, time_duration):
     topo = BottleneckTopo(bottleneck_bw=bottleneck_bw, other_bw=other_bw)
     net = Mininet(topo=topo, link=TCLink, controller=Controller)
     net.start()
 
     # Output filenames
-    network_config_filename = "output-network-config.txt"
-    ping_filename = "output-ping.txt"
+    config_filename = 'output-network-config.txt'
+    ping_filename = 'output-ping.txt'
 
-    # Test connectivity and log output
-    with open(network_config_filename, 'w') as config_file:
+    # Log network configuration
+    with open(config_filename, 'w') as config_file:
         for host in net.hosts:
-            config_file.write(f"Host {host.name} configuration:\n")
+            config_file.write(f"{host.name} configuration:\n")
             config_file.write(host.cmd('ifconfig') + "\n")
 
-    # Perform ping test
+    # Ping all hosts
+    ping_results = net.pingAll()
     with open(ping_filename, 'w') as ping_file:
-        ping_result = net.pingAll()
-        ping_file.write(f"Ping results: {ping_result}\n")
+        ping_file.write(f"Ping results: {ping_results}\n")
 
-    # Stop network
+    # Example of using the time_duration parameter with iperf
+    client = net.get('c1')
+    server = net.get('s1')
+
+    # Start iperf server on the server node
+    server.cmd(f'iperf -s -t {time_duration} &')
+
+    # Run iperf client on the client node
+    client_output = client.cmd(f'iperf -c {server.IP()} -t {time_duration}')
+    print(client_output)
+
+    # Stopping the network
     net.stop()
 
 if __name__ == '__main__':
-    # Set up argument parser
     parser = argparse.ArgumentParser()
     parser.add_argument('--bottleneck', type=int, default=10, help="Bandwidth of the bottleneck link in Mbps")
     parser.add_argument('--other', type=int, default=100, help="Bandwidth of other links in Mbps")
+    parser.add_argument('--time', type=int, default=10, help="Duration of the traffic simulation in seconds")
     args = parser.parse_args()
 
-    # Run the topology with parsed arguments
-    run_topology(args.bottleneck, args.other)
+    run_topology_tests(args.bottleneck, args.other, args.time)

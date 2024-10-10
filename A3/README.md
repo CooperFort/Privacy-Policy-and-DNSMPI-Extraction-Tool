@@ -92,15 +92,15 @@ Task 3 Outputs:
 
 Afrim Mustafa
 
-    Task 1, 2, Comments
+- Task 1, 2, Comments
 
 Sidney Atkins
 
-    Task 3, README
+- Task 3, README
 
 Cooper Fart
 
-    Task 3, README
+- Task 3, README
 
 Ben Schlachtenhaufen
 
@@ -109,20 +109,20 @@ Credit Reel:
 
 Mininet Introduction Video: https://www.youtube.com/watch?v=tn1-Pxm0ckc
 
-    How to set up mininet, mininet functions, differences in mininet topologies
+- How to set up mininet, mininet functions, differences in mininet topologies
 
 Mininet Documentation: https://mininet.org/walkthrough/
 
-    Explained how to use mininet with Ubuntu VIM and assisted in solving errors found in debugging
+- Explained how to use mininet with Ubuntu VIM and assisted in solving errors found in debugging
 
 Iperf Documentation: https://iperf.fr/iperf-doc.php
 
-    Background on using Iperf and its commands
+- Background on using Iperf and its commands
 
 iPerf Video: https://www.youtube.com/watch?v=kPnhFxiiUQY
 
-    Information on setting up iPerf servers and clients and connecting them
+- Information on setting up iPerf servers and clients and connecting them
 
 Matplotlib Documentation: https://matplotlib.org/stable/index.html
 
-    Background documentation on how to use matplotlib and its functions
+- Background documentation on how to use matplotlib and its functions

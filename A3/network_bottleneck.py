@@ -1,62 +1,105 @@
+import argparse
 from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.link import TCLink
-from mininet.node import Controller
-import argparse
+from mininet.node import OVSController
+import os
+import subprocess
 
 class BottleneckTopo(Topo):
-    def build(self, bottleneck_bw=10, other_bw=100):
-        # Adding hosts and switches
-        clients = [self.addHost(f'c{i+1}') for i in range(2)]
-        servers = [self.addHost(f's{i+1}') for i in range(2)]
-        switches = [self.addSwitch(f'sw{i+1}') for i in range(2)]
+    def build(self, bw_bottleneck, bw_other):
+        # Add hosts h1, h2, h3, h4
+        h1 = self.addHost('h1')
+        h2 = self.addHost('h2')
+        h3 = self.addHost('h3')
+        h4 = self.addHost('h4')
 
-        # Adding links between nodes with specified bandwidth
-        for client in clients:
-            self.addLink(client, switches[0], bw=other_bw)
-        for server in servers:
-            self.addLink(server, switches[1], bw=other_bw)
-        self.addLink(switches[0], switches[1], bw=bottleneck_bw)
+        # Add switches s1 and s2
+        s1 = self.addSwitch('s1')
+        s2 = self.addSwitch('s2')
 
-def run_topology_tests(bottleneck_bw, other_bw, time_duration):
-    topo = BottleneckTopo(bottleneck_bw=bottleneck_bw, other_bw=other_bw)
-    net = Mininet(topo=topo, link=TCLink, controller=Controller)
-    net.start()
+        # Add links between hosts and switches with specified bandwidths
+        # Links from clients to s1
+        self.addLink(h1, s1, cls=TCLink, bw=bw_other)
+        self.addLink(h2, s1, cls=TCLink, bw=bw_other)
 
-    # Output filenames
-    config_filename = 'output-network-config.txt'
-    ping_filename = 'output-ping.txt'
+        # Bottleneck link between s1 and s2
+        self.addLink(s1, s2, cls=TCLink, bw=bw_bottleneck)
 
-    # Log network configuration
-    with open(config_filename, 'w') as config_file:
-        for host in net.hosts:
-            config_file.write(f"{host.name} configuration:\n")
-            config_file.write(host.cmd('ifconfig') + "\n")
+        # Links from s2 to servers
+        self.addLink(s2, h3, cls=TCLink, bw=bw_other)
+        self.addLink(s2, h4, cls=TCLink, bw=bw_other)
 
-    # Ping all hosts
-    ping_results = net.pingAll()
-    with open(ping_filename, 'w') as ping_file:
-        ping_file.write(f"Ping results: {ping_results}\n")
+def run_topology_tests(bw_bottleneck, bw_other):
+    net = None  # Initialize net to None
+    output_dir = './'
 
-    # Example of using the time_duration parameter with iperf
-    client = net.get('c1')
-    server = net.get('s1')
+    try:
+        # Initialize the topology
+        topo = BottleneckTopo(bw_bottleneck=bw_bottleneck, bw_other=bw_other)
+        net = Mininet(topo=topo, link=TCLink, controller=OVSController)
+        net.start()
 
-    # Start iperf server on the server node
-    server.cmd(f'iperf -s -t {time_duration} &')
+        # Log the network configuration
+        with open(f'{output_dir}output-network-config.txt', 'w') as f:
+            f.write("Network Configuration:\n")
+            for link in net.links:
+                src = link.intf1.node.name
+                dst = link.intf2.node.name
+                bw = link.intf1.params.get('bw', 'Unknown')
+                f.write(f"Link between {src} and {dst} with bandwidth {bw} Mbps\n")
 
-    # Run iperf client on the client node
-    client_output = client.cmd(f'iperf -c {server.IP()} -t {time_duration}')
-    print(client_output)
+        # List of host names
+        hosts = ['h1', 'h2', 'h3', 'h4']
 
-    # Stopping the network
-    net.stop()
+        # Run ifconfig on each host and save output
+        for host_name in hosts:
+            host = net.get(host_name)
+            output = host.cmd('ifconfig')
+            with open(f'{output_dir}output-ifconfig-{host_name}.txt', 'w') as f:
+                f.write(output)
+
+        # Perform ping tests between all pairs of hosts
+        for src_name in hosts:
+            src_host = net.get(src_name)
+            with open(f'{output_dir}output-ping-{src_name}.txt', 'w') as f:
+                for dst_name in hosts:
+                    if src_name != dst_name:
+                        dst_host = net.get(dst_name)
+                        ping_result = src_host.cmd(f'ping -c 4 {dst_host.IP()}')
+                        f.write(f'Ping from {src_name} to {dst_name}:\n{ping_result}\n')
+
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    finally:
+        if net is not None:
+            net.stop()
+
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--bottleneck', type=int, default=10, help="Bandwidth of the bottleneck link in Mbps")
-    parser.add_argument('--other', type=int, default=100, help="Bandwidth of other links in Mbps")
-    parser.add_argument('--time', type=int, default=10, help="Duration of the traffic simulation in seconds")
+    # Clear Mininet state before starting
+    try:
+        subprocess.run(['sudo', 'mn', '-c'], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to clean Mininet state: {e}")
+        exit(1)
+
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description='Network Bottleneck Simulation')
+    parser.add_argument('--bw_bottleneck', type=int, default=10,
+                        help='Bandwidth of the bottleneck link in Mbps')
+    parser.add_argument('--bw_other', type=int, default=100,
+                        help='Bandwidth of the other links in Mbps')
+    parser.add_argument('--time', type=int, default=10,
+                        help='Duration of the traffic simulation in seconds')
     args = parser.parse_args()
 
-    run_topology_tests(args.bottleneck, args.other, args.time)
+    # Validate bandwidth parameters
+    if args.bw_other <= args.bw_bottleneck:
+        print("Error: --bw_other must be greater than --bw_bottleneck")
+        exit(1)
+
+    # Run the topology tests with provided arguments
+    run_topology_tests(args.bw_bottleneck, args.bw_other)

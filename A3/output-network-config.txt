@@ -1,0 +1,6 @@
+Network Configuration:
+Link between h1 and s1 with bandwidth 100 Mbps
+Link between h2 and s1 with bandwidth 100 Mbps
+Link between s1 and s2 with bandwidth 10 Mbps
+Link between s2 and h3 with bandwidth 100 Mbps
+Link between s2 and h4 with bandwidth 100 Mbps

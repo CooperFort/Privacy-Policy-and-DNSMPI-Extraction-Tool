@@ -57,7 +57,7 @@ observations.txt
 Member Contributions:
 
 Afrim Mustafa
-    Task 1, 2, Comments
+   Task 1, 2, Comments
 Sidney Atkins
     Task 3, README
 Cooper Fart

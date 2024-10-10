@@ -1,4 +1,6 @@
 import argparse
+
+from mininet.cli import CLI
 from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.link import TCLink
@@ -32,6 +34,7 @@ def run_topology_tests(bw_bottleneck, bw_other):
         topo = BottleneckTopo(bw_bottleneck=bw_bottleneck, bw_other=bw_other)
         net = Mininet(topo=topo, link=TCLink, controller=OVSController)
         net.start()
+        CLI(net)
 
         with open(f'{output_dir}output-network-config.txt', 'w') as f:
             f.write("Network Configuration:\n")

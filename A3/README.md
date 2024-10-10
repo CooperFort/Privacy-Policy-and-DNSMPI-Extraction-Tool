@@ -55,8 +55,8 @@ analysis.png
 observations.txt
 
 Member Contributions:
-Afrim Mustafa
 
+Afrim Mustafa
 - Task 1, 2, Comments
   Sidney Atkins
 - Task 3, README
@@ -66,8 +66,7 @@ Afrim Mustafa
 -
 
 Credit Reel:
-Mininet Introduction Video: https://www.youtube.com/watch?v=tn1-Pxm0ckc
-
+  Mininet Introduction Video: https://www.youtube.com/watch?v=tn1-Pxm0ckc
 - How to set up mininet, mininet functions, differences in mininet topologies
   Mininet Documentation: https://mininet.org/walkthrough/
 - Explained how to use mininet with Ubuntu VIM and assisted in solving errors found in debugging

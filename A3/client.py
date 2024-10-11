@@ -3,6 +3,7 @@ import json
 import iperf3
 
 def run_client():
+    # Set up argument parsing for client configuration
     parser = argparse.ArgumentParser()
     parser.add_argument('--ip', type=str, required=True, help="Client IP address")
     parser.add_argument('--port', type=int, default=5201, help="Client port")
@@ -12,11 +13,12 @@ def run_client():
     parser.add_argument('--other_bw', type=int, required=True, help="Other links bandwidth in Mbps")
     args = parser.parse_args()
 
+    # Initialize the iPerf3 client with parsed arguments
     client = iperf3.Client()
     client.server_hostname = args.server_ip
     client.port = args.port
     client.protocol = args.test
-    client.duration = 60
+    client.duration = 60  # Set duration to 60 seconds
 
     # Run the client and gather results
     result = client.run()
@@ -41,6 +43,7 @@ def run_client():
         total_bytes_sent = None  # Not available for UDP
         total_bytes_received = None  # Not available for UDP
 
+    # Create a dictionary with the collected data
     output_data = {
         'total_bytes_sent': total_bytes_sent,
         'total_bytes_received': total_bytes_received,

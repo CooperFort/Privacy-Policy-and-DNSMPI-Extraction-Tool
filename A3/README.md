@@ -4,9 +4,33 @@ Project Members: Afrim Mustafa, Sidney Atkins, Cooper Fort, Ben Schlachtenhaufen
 
 Hawk ID: amustf, statkins, cjfort, bschlachtenhaufen
 
-Running the Code
+# Network Bottleneck Simulation with iPerf
 
-Setting up the Network: network_bottleneck.py
+This project simulates a network bottleneck environment using Mininet and iPerf to analyze the performance of TCP and UDP traffic over various bandwidth configurations. The results are visualized to understand the effects of network bottlenecks on throughput, jitter, and packet loss.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+  - [1. Setup and Run Network Tests](#1-setup-and-run-network-tests)
+  - [2. Analyze Results](#2-analyze-results)
+- [Output Files](#output-files)
+- [Member Contributions](#Member Contributions)
+
+## Installation
+Ensure that the following tools are installed on your machine:
+- Mininet
+- Python 3.6+ with pip
+- iPerf3
+- Python packages: `argparse`, `matplotlib`, `json`, `subprocess`
+
+You can install the required Python packages using:
+```bash
+pip install matplotlib
+
+
+## Usage
+
+## 1. Setting up the Network: network_bottleneck.py
 
 This script creates the network topology and runs tests to ensure the network is correctly configured.
 
@@ -52,7 +76,7 @@ To start the iPerf client, run the following command:
 
 This will generate traffic and save the results as JSON files such as output-<test>-<bottleneck>-<other>.json.
 
-Analyzing Performance: analyze_perf.py
+## 2. Analyzing Results: analyze_perf.py
 
 This script runs network simulations with different bandwidth configurations and plots the results.
 
@@ -66,7 +90,7 @@ This script will run network_bottleneck.py multiple times with different bottlen
 
 (analysis.png) showing the throughput for TCP and UDP traffic. Additionally, insights will be saved in observations.txt.
 
-Output Files
+## Output Files
 
 Task 1 Outputs:
 

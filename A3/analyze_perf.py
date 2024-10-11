@@ -12,6 +12,7 @@ def run_subprocess(command, output_file):
 
 
 def analyze_results(file_path):
+    # Load JSON data from the specified file
     with open(file_path, 'r') as file:
         data = json.load(file)
 
@@ -24,8 +25,10 @@ def analyze_results(file_path):
 
 
 def plot_data(results, filename="analysis.png"):
+    # Unzip the results into separate lists
     labels, throughputs, jitters, losses = zip(*results)
 
+    # Create a plot for throughput vs bandwidth
     plt.figure()
     plt.plot(labels, throughputs, marker='o', label='Throughput (Mbps)')
     plt.xlabel('Bandwidth (Mbps)')

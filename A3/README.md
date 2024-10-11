@@ -76,6 +76,7 @@ To start the iPerf client, run the following command:
 
 This will generate traffic and save the results as JSON files such as output-<test>-<bottleneck>-<other>.json.
 
+
 ## 2. Analyzing Results: analyze_perf.py
 
 This script runs network simulations with different bandwidth configurations and plots the results.
@@ -89,6 +90,7 @@ Command to run:
 This script will run network_bottleneck.py multiple times with different bottleneck bandwidth values (8 Mbps, 32 Mbps, and 64 Mbps) and generate a plot 
 
 (analysis.png) showing the throughput for TCP and UDP traffic. Additionally, insights will be saved in observations.txt.
+
 
 ## Output Files
 
@@ -112,22 +114,24 @@ Task 3 Outputs:
 
 - observations.txt
 
-- Member Contributions:
+
+## Member Contributions:
 
 Afrim Mustafa
 
-- Task 1, 2, Comments
+- Created network_bottleneck.py, client.py and server.py
 
 Sidney Atkins
 
-- Task 3, README
+- Created analyze_perf.py and README
 
 Cooper Fart
 
-- Task 3, README
+- Created analyze_perf.py and README
 
 Ben Schlachtenhaufen
 
+- README and troubleshooting
 
 Credit Reel:
 

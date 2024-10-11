@@ -1,0 +1,11 @@
+{
+    "total_bytes_sent": null,
+    "total_bytes_received": null,
+    "protocol": "udp",
+    "duration": 60,
+    "server_ip": "127.0.0.1",
+    "client_ip": "127.0.0.1",
+    "bits_per_second": 154974271177.99338,
+    "jitter": 0.0009392079274245786,
+    "packet_loss": 13.171680590004616
+}

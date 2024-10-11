@@ -1,11 +1,11 @@
 {
-    "total_bytes_sent": 847981838336,
-    "total_bytes_received": 847981969408,
+    "total_bytes_sent": 843127193600,
+    "total_bytes_received": 843127193600,
     "protocol": "tcp",
     "duration": 60,
     "server_ip": "127.0.0.1",
     "client_ip": "127.0.0.1",
-    "bits_per_second": 113055807379.70923,
+    "bits_per_second": 112414620922.55148,
     "jitter": null,
     "packet_loss": null
 }

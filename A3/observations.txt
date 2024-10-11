@@ -1,0 +1,7 @@
+Network Performance Observations:
+Bandwidth: 8 Mbps - Throughput: 112414.62092255149 Mbps, Jitter: None ms, Packet Loss: None %
+Bandwidth: 8 Mbps - Throughput: 155160.27949924182 Mbps, Jitter: 0.00047592375627591765 ms, Packet Loss: 11.42687950392512 %
+Bandwidth: 32 Mbps - Throughput: 113403.46469563905 Mbps, Jitter: None ms, Packet Loss: None %
+Bandwidth: 32 Mbps - Throughput: 154974.2711779934 Mbps, Jitter: 0.0009392079274245786 ms, Packet Loss: 13.171680590004616 %
+Bandwidth: 64 Mbps - Throughput: 113341.62594203943 Mbps, Jitter: None ms, Packet Loss: None %
+Bandwidth: 64 Mbps - Throughput: 154907.24649763887 Mbps, Jitter: 0.0016842589423564 ms, Packet Loss: 14.26413119900587 %

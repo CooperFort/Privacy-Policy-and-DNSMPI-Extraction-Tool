@@ -1,14 +1,25 @@
 import json
+import argparse
+import subprocess
 import matplotlib.pyplot as plt
+
+
+def run_subprocess(command, output_file):
+    # Runs a subprocess and writes the output to a file
+    result = subprocess.run(command, capture_output=True, text=True)
+    with open(output_file, "w") as file:
+        file.write(result.stdout)
 
 
 def analyze_results(file_path):
     with open(file_path, 'r') as file:
         data = json.load(file)
 
-    throughput = data['end']['sum_received']['bits_per_second'] / 1e6  # Convert to Mbps
-    jitter = data['end']['sum']['jitter_ms']
-    packet_loss = data['end']['sum']['lost_percent']
+    # Extract values directly from the root level
+    throughput = data['bits_per_second'] / 1e6  # Convert to Mbps
+    jitter = data.get('jitter', None)  # Handle null values gracefully
+    packet_loss = data.get('packet_loss', None)  # Handle null values gracefully
+
     return throughput, jitter, packet_loss
 
 
@@ -25,28 +36,29 @@ def plot_data(results, filename="analysis.png"):
 
 
 def main():
+    # Updated bandwidths for Task 3
     bandwidth_tests = [8, 32, 64]
     results = []
     for bw in bandwidth_tests:
-        # Assuming output filenames based on TCP and UDP tests
-        tcp_file = f"output-tcp-{bw}-32.json"  # Adjust '32' as needed if other values are used
+        tcp_file = f"output-tcp-{bw}-32.json"
         udp_file = f"output-udp-{bw}-32.json"
 
-        # Analyze both TCP and UDP
+        # Analyze TCP results
         tcp_throughput, tcp_jitter, tcp_loss = analyze_results(tcp_file)
-        udp_throughput, udp_jitter, udp_loss = analyze_results(udp_file)
+        results.append((bw, tcp_throughput, tcp_jitter, tcp_loss))
 
-        # Store the results for plotting and observations
-        results.append((f"TCP {bw} Mbps", tcp_throughput, tcp_jitter, tcp_loss))
-        results.append((f"UDP {bw} Mbps", udp_throughput, udp_jitter, udp_loss))
+        # Analyze UDP results
+        udp_throughput, udp_jitter, udp_loss = analyze_results(udp_file)
+        results.append((bw, udp_throughput, udp_jitter, udp_loss))
 
     plot_data(results)
 
     # Write observations to file
     with open("observations.txt", "w") as file:
         file.write("Network Performance Observations:\n")
-        for label, throughput, jitter, loss in results:
-            file.write(f"{label} - Throughput: {throughput} Mbps, Jitter: {jitter} ms, Packet Loss: {loss} %\n")
+        for bw, throughput, jitter, loss in results:
+            file.write(
+                f"Bandwidth: {bw} Mbps - Throughput: {throughput} Mbps, Jitter: {jitter} ms, Packet Loss: {loss} %\n")
 
 
 if __name__ == '__main__':

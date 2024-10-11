@@ -1,0 +1,9 @@
+{
+    "total_bytes_sent": 849526128640,
+    "total_bytes_received": 849526128640,
+    "protocol": "tcp",
+    "duration": 60,
+    "server_ip": "127.0.0.1",
+    "client_ip": "127.0.0.1",
+    "bits_per_second": 113259534291.6524
+}

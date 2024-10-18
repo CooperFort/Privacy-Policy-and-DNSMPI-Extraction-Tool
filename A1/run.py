@@ -21,8 +21,8 @@ def main():
     # Create or open output.txt in write mode
     with open(output_path, "w") as output_file:
         # Write HawkID and Name at the top
-        output_file.write("HawkID: your_hawk_id\n")
-        output_file.write("Name: Your Name\n")
+        output_file.write("HawkID: bschlachtenhaufen\n")
+        output_file.write("Name: Benjamin Schlachtenhaufen\n")
         output_file.write("\n*****\n")
 
         # Commands to execute

@@ -1,0 +1,12 @@
+HawkID: bschlachtenhaufen
+Name: Benjamin Schlachtenhaufen
+
+Server Logs:
+Server started on port 5000. Listening for connections...
+[Info] Client ('127.0.0.1', 48456) connected.
+[Received] ('127.0.0.1', 48456): hi
+[Info] Client ('127.0.0.1', 54400) connected.
+[Received] ('127.0.0.1', 54400): Hi from the actual machine
+[Received] ('127.0.0.1', 48456): hi from the ssh connection
+[Info] Client ('127.0.0.1', 48456) disconnected.
+[Info] Client ('127.0.0.1', 54400) disconnected.

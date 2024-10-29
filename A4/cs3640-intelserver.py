@@ -29,16 +29,26 @@ def get_tls_certificate(domain):
 
 def get_hosting_as(domain):
     try:
-        # Attempt to retrieve whois information
-        try:
-            domain_info = whois.whois(domain)
-        except AttributeError:
-            domain_info = whois.query(domain)
-
-        if domain_info and hasattr(domain_info, 'asn'):
-            return f"Hosting AS: {domain_info.asn}"
+        # Resolve the IP address for the domain
+        ip_address = dns.resolver.resolve(domain, 'A')[0].to_text()
+        
+        # Use the ipwhois library to perform the WHOIS lookup for AS information
+        from ipwhois import IPWhois
+        obj = IPWhois(ip_address)
+        res = obj.lookup_rdap(asn_methods=["whois", "http"])
+        
+        # Extract AS information from the WHOIS data
+        asn = res.get("asn")
+        asn_description = res.get("asn_description")
+        
+        if asn and asn_description:
+            return f"AS: {asn}, Description: {asn_description}"
         else:
             return "Error: AS information could not be determined."
+    except dns.resolver.NXDOMAIN:
+        return "Error: Domain could not be resolved."
+    except ImportError:
+        return "Error: ipwhois module is required. Install it with 'pip install ipwhois'."
     except Exception as e:
         return f"Error: {str(e)}"
 

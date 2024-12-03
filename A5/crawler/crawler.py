@@ -45,7 +45,7 @@ def find_privacy_and_dnsmpi(url, retries=3, delay=5):
         "do not share", "data privacy", "cookies", "third-party", "advertising choices",
         "consumer rights", "manage your privacy", "control your data", "privacy settings",
         "user consent", "manage cookies", "ad preferences", "data protection", "cookie policy",
-        "privacy rights"
+        "privacy rights", "privacy"
     ]
     
     for a_tag in soup.find_all('a', href=True):

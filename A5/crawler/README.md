@@ -42,6 +42,7 @@ or adjust the script to point to the correct location of the file.
 **Execute the script**:
     ```bash
     python3 crawler.py
+    ```
 
 The results will be saved in scraped_data.json in the following format:
 
@@ -56,8 +57,8 @@ The results will be saved in scraped_data.json in the following format:
                     "url": "https://www.example1.com/dnsmpi"
                 }
             ]
-        },
-        ...
+        }
+        
     ]
     ```
 

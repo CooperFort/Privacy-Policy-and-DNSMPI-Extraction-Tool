@@ -1,0 +1,7 @@
+Total Websites Analyzed: 106
+==================================================
+Category            Count     Percentage
+==================================================
+Privacy Policy      81            76.42%
+DNSMPI Link         82            77.36%
+Both                79            74.53%

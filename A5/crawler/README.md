@@ -17,6 +17,7 @@ Download the Website List: Prepare a text file (websites.txt) containing a list 
 Each website should be on a new line in the file. For example:
 
 https://www.example1.com
+
 https://www.example2.com
 
 Crawler Script: The script crawler.py is responsible for crawling each website in the websites.txt file 

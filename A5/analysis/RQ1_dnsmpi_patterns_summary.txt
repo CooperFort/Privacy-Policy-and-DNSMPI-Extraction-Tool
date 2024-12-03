@@ -9,73 +9,73 @@ Rank  Pattern                                                      Frequency
 7     privacy statement                                                    5
 8     privacy notice                                                       5
 9     privacy & security                                                   4
-10    do not sell my personal information                                  3
-11    privacy center                                                       3
-12    privacy & terms                                                      2
-13    consumer health privacy                                              2
-14    privacy preferences                                                  2
-15    your privacy rights                                                  2
-16    about cookies                                                        2
-17    hipaa notice of privacy practices                                    2
-18    privacy
+10    privacy center                                                       3
+11    do not sell my personal information                                  3
+12    privacy preferences                                                  2
+13    privacy
                                                 ...         2
-19    applicant privacy notice                                             1
-20    do not sell or share my personal info                                1
-21    privacy / ad cookies                                                 1
-22    cookies & ccpa preferences                                           1
-23    updated privacy policy                                               1
-24    privacy policy, including california privacy rights                  1
-25    privacy & cookie statement                                           1
-26    |third-party trademarks                                              1
-27    see our privacy policy here.                                         1
-28    washington privacy notice                                            1
-29    security and privacy                                                 1
-30    privacy notice (en)                                                  1
-31    consumer healthâ data privacy policy                                 1
-32    cookies policy                                                       1
-33    privacy and cookie statement                                         1
-34    ca privacy notice                                                    1
-35    your california privacy choices                                      1
-36    do not sell or share my personal information / personal d...         1
-37    consumer health data privacy notices                                 1
-38    manage privacy preferences                                           1
-39    do not share or sell my info                                         1
-40    privacy
+14    consumer health privacy                                              2
+15    hipaa notice of privacy practices                                    2
+16    about cookies                                                        2
+17    your privacy rights                                                  2
+18    privacy & terms                                                      2
+19    cscookies, snacks & candy                                            1
+20    do not sell or share my information                                  1
+21    cookies, snacks & candy                                              1
+22    thenorthface/privacyyour privacy choices                             1
+23    childrenâs privacy                                                 1
+24    your ads privacy choices                                             1
+25    consumer health data privacy disclosure                              1
+26    do not share my information/spl                                      1
+27    privacy, cookies, and legal                                          1
+28    privacy, cookies, security & legal                                   1
+29    cookies & bakery snacks                                              1
+30    privacy / ad cookies                                                 1
+31    network advertising initiative's opt-out toolpopup                   1
+32    bank of america online privacy notice                                1
+33    online privacy faqs                                                  1
+34    do not share my personal information                                 1
+35    carhartt privacy request                                             1
+36    manage cookies                                                       1
+37    your california privacy rights                                       1
+38    https://www.dataprivacyframework.gov                                 1
+39    data privacy                                                         1
+40    specific privacy notices                                             1
+41    opt-out of interest-based advertising                                1
+42    privacy and security hub                                             1
+43    privacypolicy                                                        1
+44    do not sell or share my personal information                         1
+45    privacy notice for california users                                  1
+46    privacy policy & terms of use                                        1
+47    privacy
                           policy                             1
-41    google privacy policy                                                1
-42    privacy choices                                                      1
-43    nike privacy policy                                                  1
-44    |your privacy choices                                                1
-45    |privacy notice                                                      1
-46    wa health privacy                                                    1
-47    us and california privacy policy                                     1
-48    carhartt privacy request                                             1
+48    cookie policycookie policy                                           1
 49    privacy statementprivacy statement                                   1
-50    thenorthface/privacyyour privacy choices                             1
-51    do not sell or share my information                                  1
-52    do not share my information/spl                                      1
-53    cookie policycookie policy                                           1
-54    cookies & bakery snacks                                              1
-55    cookies, snacks & candy                                              1
-56    cscookies, snacks & candy                                            1
-57    your ads privacy choices                                             1
-58    consumer health data privacy disclosure                              1
-59    privacy, cookies, and legal                                          1
-60    privacy, cookies, security & legal                                   1
-61    privacy policy & terms of use                                        1
-62    childrenâs privacy                                                 1
-63    network advertising initiative's opt-out toolpopup                   1
-64    online privacy faqs                                                  1
-65    bank of america online privacy notice                                1
-66    do not share my personal information                                 1
-67    manage cookies                                                       1
-68    your california privacy rights                                       1
-69    https://www.dataprivacyframework.gov                                 1
-70    data privacy                                                         1
-71    specific privacy notices                                             1
-72    opt-out of interest-based advertising                                1
-73    privacy and security hub                                             1
-74    privacypolicy                                                        1
-75    do not sell or share my personal information                         1
-76    privacy notice for california users                                  1
+50    applicant privacy notice                                             1
+51    privacy policy, including california privacy rights                  1
+52    privacy & cookie statement                                           1
+53    cookies & ccpa preferences                                           1
+54    updated privacy policy                                               1
+55    |privacy notice                                                      1
+56    |your privacy choices                                                1
+57    |third-party trademarks                                              1
+58    see our privacy policy here.                                         1
+59    security and privacy                                                 1
+60    washington privacy notice                                            1
+61    privacy and cookie statement                                         1
+62    cookies policy                                                       1
+63    consumer healthâ data privacy policy                                 1
+64    privacy notice (en)                                                  1
+65    consumer health data privacy notices                                 1
+66    do not sell or share my personal information / personal d...         1
+67    ca privacy notice                                                    1
+68    your california privacy choices                                      1
+69    do not share or sell my info                                         1
+70    manage privacy preferences                                           1
+71    do not sell or share my personal info                                1
+72    google privacy policy                                                1
+73    privacy choices                                                      1
+74    nike privacy policy                                                  1
+75    us and california privacy policy                                     1
+76    wa health privacy                                                    1
 77    terms & privacy                                                      1

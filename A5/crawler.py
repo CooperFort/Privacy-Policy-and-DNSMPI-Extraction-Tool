@@ -27,15 +27,15 @@ def find_privacy_and_dnsmpi(url, retries=3, delay=5):
 			else:
 				logging.error(f"Failed to fetch {url} after {retries} attempts.")
 				return None, None
-		except requests.exceptions.RequestException as e:
-			logging.error(f"Request failed for {url}: {e}")
-			return None, None
+			except requests.exceptions.RequestException as e:
+				logging.error(f"Request failed for {url}: {e}")
+				return None, None
 
-	soup = BeautifulSoup(response.txt, 'html.parser')
+	soup = BeautifulSoup(response.text, 'html.parser')
 
 	#Search for the privacy policy link
 	privacy_policy = None
-	privacy_policy_link = soup.find('a', href=True, string=re.compiler(r'privacy', re.I))
+	privacy_policy_link = soup.find('a', href=True, string=re_compiler(r'privacy', re.I))
 	if privacy_policy_link:
 		privacy_policy = privacy_policy_link['href']
 
@@ -72,14 +72,14 @@ def process_websites(input_file):
 		logging.info(f"Processing {url}")
 		privacy_policy, dnsmpi_link = find_privacy_and_dnsmpi(url)
 
-		#store the result in a dictionary
-		results.append({
-			'url': url,
-			'privacy_policy': privacy_policy,
-			'dnsmpi_links': dnsmpi_link
-		})
+	#store the result in a dictionary
+	results.append({
+		'url': url,
+		'privacy_policy': privacy_policy,
+		'dnsmpi_links': dnsmpi_link
+	})
 
-	return results
+    return results
 
 # function to write the results to a JSON file
 def write_results_to_json(results, output_file):
@@ -92,10 +92,10 @@ def main():
 	input_file = 'websites.txt'
 	output_file = 'scraped_data.json'
 
-	# process websites and get privacy and DNSMPI links
+    # process websites and get privacy and DNSMPI links
 	results = process_websites(input_file)
 
-	#write the results to the json file
+    #write the results to the json file
 	write_results_to_json(results, output_file)
 	logging.info(f"Results saved to {output_file}")
 

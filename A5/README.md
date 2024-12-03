@@ -21,6 +21,14 @@ This project examines Privacy Policy and DNSMPI (Do Not Sell My Personal Informa
 
 ---
 
+### **Key Findings**
+
+1. **RQ1**: DNSMPI links lack standardization, with a wide variety of terms and inconsistent implementation across websites.
+2. **RQ2**: Most high-traffic websites comply with privacy requirements, but smaller sites often lack visibility and accessibility for these tools.
+3. **RQ3**: Privacy links are most commonly found in footers, which may hinder their accessibility for users.
+
+---
+
 ### **Steps to Run the Project**
 
 #### **1. Run the Crawler**
@@ -123,6 +131,32 @@ Follow the instructions in the README.md file to execute the scripts (RQ1_script
 - Completed the `websites.txt` file.
 - Wrote the `README.md` for the crawler folder, explaining how to use the script.
 - Contributed to the writing of the main `README.md`.
+
+### Credit Reel
+
+- **Research Articles**:  
+  1. Solove, D. J., & Hartzog, W. (2014). *The FTC and the New Common Law of Privacy*. Available at [Harvard Law Review](https://harvardlawreview.org).  
+  2. Van Nortwick, J., & Wilson, M. (2020). *Setting the Bar Low: Are Websites Complying with the Minimum Requirements of the CCPA?*.  
+  3. Goldman, E. (2019). *An Introduction to the California Consumer Privacy Act (CCPA)*. Available at [Santa Clara Law Digital Commons](https://digitalcommons.law.scu.edu).  
+  4. Englehardt, S., & Narayanan, A. (2016). *Online Tracking: A 1-Million-Site Measurement and Analysis*. Available at [OpenWPM](https://openwpm.com).  
+  5. Privee: *An Architecture for Automatically Analyzing Web Privacy Policies*. Available at [ACM Digital Library](https://dl.acm.org).
+
+- **Coding Resources**
+
+1. **[Beautiful Soup: Build a Web Scraper With Python](https://realpython.com/beautiful-soup-web-scraper-python/)**  
+   - This Real Python tutorial provides a comprehensive guide to using Beautiful Soup for web scraping, covering HTML structure inspection, data extraction, and practical examples.
+
+2. **[Implementing Web Scraping in Python with BeautifulSoup](https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/)**  
+   - GeeksforGeeks offers a step-by-step tutorial on implementing web scraping using Python's BeautifulSoup library, with clear explanations and code snippets.
+
+3. **[Data Visualization using Matplotlib in Python](https://www.geeksforgeeks.org/data-visualization-using-matplotlib/)**  
+   - This article explains how to create various types of plots using Matplotlib, providing examples and code to enhance data visualization skills.
+
+4. **[Introduction to Plotting with Matplotlib in Python](https://www.datacamp.com/tutorial/matplotlib-tutorial-python)**  
+   - DataCamp introduces the basics of plotting with Matplotlib, including line plots, bar plots, and scatter plots, focusing on practical applications.
+
+5. **[Matplotlib Tutorial](https://www.w3schools.com/python/matplotlib_intro.asp)**  
+   - W3Schools provides an introductory tutorial on Matplotlib, covering basic plotting techniques and fundamental concepts in Python.
 
 
 

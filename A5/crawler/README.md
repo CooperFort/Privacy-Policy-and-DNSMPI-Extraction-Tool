@@ -10,13 +10,17 @@ The results are saved in a JSON format.
 
 Before running the script, ensure that you have the following installed:
 
-**Python 3**
+- Python 3
 
-**Required Python libraries**: requests, beautifulsoup4
+- Required Python libraries: 
+
+    - requests
+
+    - beautifulsoup4
 
 To install the required libraries, you can use pip:
 
-sudo apt install python3-requests python3-bs4
+`sudo apt install python3-requests python3-bs4`
 
 ## Setup
 

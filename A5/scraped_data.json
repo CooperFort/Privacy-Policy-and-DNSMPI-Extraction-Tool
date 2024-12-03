@@ -1,108 +1,205 @@
 [
     {
+        "url": "https://hollisterco.com/shop/us",
+        "privacy_policy": "/shop/CustomerService?pageName=privacy&storeId=10251&textKey=LEGAL_PRIVACY_POLICY&catalogId=10201&langId=-1",
+        "dnsmpi_links": [
+            {
+                "text": "privacy / ad cookies",
+                "url": "/shop/CustomerService?pageName=privacy&storeId=10251&textKey=LEGAL_PRIVACY_POLICY&catalogId=10201&langId=-1"
+            },
+            {
+                "text": "do not sell or share my personal info",
+                "url": "javascript:void(0);"
+            }
+        ]
+    },
+    {
+        "url": "https://scheels.com",
+        "privacy_policy": null,
+        "dnsmpi_links": null
+    },
+    {
+        "url": "https://dickssportinggoods.com",
+        "privacy_policy": null,
+        "dnsmpi_links": null
+    },
+    {
+        "url": "https://chipotle.com",
+        "privacy_policy": "/recruiting-notice",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "/cookie-policy"
+            },
+            {
+                "text": "privacy policy, including california privacy rights",
+                "url": "/privacy-policy"
+            }
+        ]
+    },
+    {
         "url": "https://gap.com",
         "privacy_policy": null,
         "dnsmpi_links": null
     },
     {
         "url": "https://staples.com",
-        "privacy_policy": null,
+        "privacy_policy": "/hc?id=dbb94c10-973c-478b-a078-00e58f66ba32",
         "dnsmpi_links": null
     },
     {
         "url": "https://ikea.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.ikea.com/global/en/privacy/privacy-cookie-statement/",
         "dnsmpi_links": null
     },
     {
         "url": "https://dropbox.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/terms",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "https://help.dropbox.com/accounts-billing/security/cookies"
+            },
+            {
+                "text": "cookies & ccpa preferences",
+                "url": "#manage-cookies"
+            }
+        ]
     },
     {
         "url": "https://fox.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.fox.com/article/privacy-policy-60dcb84b3de21a001de6c804/",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://privacy.fox.com/main/web/main"
+            }
+        ]
     },
     {
         "url": "https://msnbc.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.nbcuniversal.com/privacy/?intake=MSNBC",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell my personal information",
+                "url": "https://www.nbcuniversal.com/privacy/notrtoo/?intake=MSNBC"
+            }
+        ]
     },
     {
         "url": "https://carfax.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.carfax.com/company/privacy-statement",
         "dnsmpi_links": null
     },
     {
         "url": "https://ford.com",
         "privacy_policy": null,
-        "dnsmpi_links": null
+        "dnsmpi_links": [
+            {
+                "text": "|your privacy choices",
+                "url": "/help/privacy/ccpa/"
+            },
+            {
+                "text": "|third-party trademarks",
+                "url": "/help/third-party-trademarks/"
+            }
+        ]
     },
     {
         "url": "https://chevrolet.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.gm.com/privacy-statement?evar25=ch_footer",
         "dnsmpi_links": null
     },
     {
         "url": "https://nissanusa.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/privacy.html",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal information",
+                "url": "/data-privacy.html"
+            }
+        ]
     },
     {
         "url": "https://spacex.com",
-        "privacy_policy": null,
+        "privacy_policy": "/media/privacy_policy_spacex.pdf",
         "dnsmpi_links": null
     },
     {
         "url": "https://polestar.com/us/",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://polestar.com/us/legal/privacy/",
+        "dnsmpi_links": [
+            {
+                "text": "cookies",
+                "url": "https://polestar.com/us/legal/privacy/cookies/"
+            },
+            {
+                "text": "do not sell my personal information",
+                "url": "https://www.polestar.com/us/data-subject-right-request"
+            }
+        ]
     },
     {
         "url": "https://wikipedia.org",
-        "privacy_policy": null,
+        "privacy_policy": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://apple.com",
-        "privacy_policy": null,
+        "privacy_policy": "/privacy/",
         "dnsmpi_links": null
     },
     {
         "url": "https://samsung.com/us/",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/us/privacy/",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal information",
+                "url": "javascript:OneTrust.ToggleInfoDisplay();"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "javascript:OneTrust.ToggleInfoDisplay()"
+            }
+        ]
     },
     {
         "url": "https://kia.com/us/en",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.kia.com/us/en/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://boeing.com",
-        "privacy_policy": null,
+        "privacy_policy": "/privacy-and-cookie-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://bissell.com",
-        "privacy_policy": null,
+        "privacy_policy": "/en-us/privacy-notice/",
         "dnsmpi_links": null
     },
     {
         "url": "https://drinkprime.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
-    },
-    {
-        "url": "https://dinkbai.com",
-        "privacy_policy": null,
+        "privacy_policy": "/policies/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://coca-cola.com/us/en",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/us/en/legal/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "cookies policy",
+                "url": "/us/en/legal/cookies-policy"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "/us/en/legal/do-not-sell-or-share-my-personal-information"
+            },
+            {
+                "text": "consumer health\u00e2\u00a0data privacy policy",
+                "url": "/us/en/legal/consumer-health-data-privacy-policy"
+            }
+        ]
     },
     {
         "url": "https://hy-vee.com",
@@ -111,7 +208,7 @@
     },
     {
         "url": "https://aldi.com",
-        "privacy_policy": null,
+        "privacy_policy": "privacy_policy.html",
         "dnsmpi_links": null
     },
     {
@@ -121,8 +218,17 @@
     },
     {
         "url": "https://walmart.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://corporate.walmart.com/privacy-security",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://www.walmart.com/account/api/ccpa-intake?native=false&app=gm&type=sod"
+            },
+            {
+                "text": "consumer health data privacy notices",
+                "url": "https://corporate.walmart.com/privacy-security/walmart-consumer-health-data-privacy-notices"
+            }
+        ]
     },
     {
         "url": "https://blizzard.com/en-us/",
@@ -131,12 +237,17 @@
     },
     {
         "url": "https://rakuten.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/help/article/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal information / personal data opt-out",
+                "url": "/anon-privacy-preferences.htm"
+            }
+        ]
     },
     {
         "url": "https://google.com",
-        "privacy_policy": null,
+        "privacy_policy": "/intl/en/policies/privacy/",
         "dnsmpi_links": null
     },
     {
@@ -151,8 +262,17 @@
     },
     {
         "url": "https://ebay.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260",
+        "dnsmpi_links": [
+            {
+                "text": "cookies",
+                "url": "https://www.ebay.com/help/policies/member-behaviour-policies/ebay-cookie-notice?id=4267"
+            },
+            {
+                "text": "your privacy choices",
+                "url": "https://www.ebay.com/adchoice/ccpa"
+            }
+        ]
     },
     {
         "url": "https://target.com",
@@ -161,13 +281,18 @@
     },
     {
         "url": "https://microsoft.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://privacy.microsoft.com/en-us",
         "dnsmpi_links": null
     },
     {
         "url": "https://facebook.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/privacy/policy/?entry_point=facebook_page_footer",
+        "dnsmpi_links": [
+            {
+                "text": "cookies",
+                "url": "/policies/cookies/"
+            }
+        ]
     },
     {
         "url": "https://twitter.com",
@@ -181,8 +306,25 @@
     },
     {
         "url": "https://linkedin.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy"
+            },
+            {
+                "text": "cookie policy",
+                "url": "/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy"
+            },
+            {
+                "text": "your california privacy choices",
+                "url": "https://www.linkedin.com/legal/california-privacy-disclosure?trk=homepage-basic_footer-california-privacy-rights-act"
+            },
+            {
+                "text": "cookie policy",
+                "url": "https://www.linkedin.com/legal/cookie-policy?trk=homepage-basic_footer-cookie-policy"
+            }
+        ]
     },
     {
         "url": "https://pinterest.com",
@@ -191,83 +333,166 @@
     },
     {
         "url": "https://youtube.com",
-        "privacy_policy": null,
+        "privacy_policy": "/t/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://reddit.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.redditinc.com/policies/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://bbc.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.bbc.com/usingthebbc/privacy/",
+        "dnsmpi_links": [
+            {
+                "text": "cookies",
+                "url": "https://www.bbc.com/usingthebbc/cookies/"
+            },
+            {
+                "text": "do not share or sell my info",
+                "url": "https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
+            }
+        ]
     },
     {
         "url": "https://cnn.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.cnn.com/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://nytimes.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.nytimes.com/privacy/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "manage privacy preferences",
+                "url": "/privacy/manage-settings"
+            }
+        ]
     },
     {
         "url": "https://forbes.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.forbes.com/fdc/privacy.html",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal information",
+                "url": "https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true"
+            },
+            {
+                "text": "privacy preferences",
+                "url": "https://www.forbes.com/consent/editprivacy/?consent_all_preferences=true"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true"
+            },
+            {
+                "text": "privacy preferences",
+                "url": "https://www.forbes.com/consent/editprivacy/?consent_all_preferences=true"
+            }
+        ]
     },
     {
         "url": "https://businessinsider.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.insider-inc.com/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "/your-privacy-choices"
+            }
+        ]
     },
     {
         "url": "https://time.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://time.com/privacy/privacy_policy.html",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy rights",
+                "url": "https://time.com/privacy/privacy_policy.html#_Toc26698205"
+            },
+            {
+                "text": "your privacy rights",
+                "url": "https://time.com/privacy/privacy_policy.html#_Toc26698205"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "javascript:ketch('showPreferences')"
+            }
+        ]
     },
     {
         "url": "https://guardian.co.uk",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://policies.google.com/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "/info/cookies"
+            }
+        ]
     },
     {
         "url": "https://theverge.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.voxmedia.com/legal/privacy-notice",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "https://www.voxmedia.com/legal/cookie-policy"
+            }
+        ]
     },
     {
         "url": "https://huffpost.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.huffpost.com/static/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://usatoday.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://cm.usatoday.com/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://cm.usatoday.com/your-privacy-choices/"
+            }
+        ]
     },
     {
         "url": "https://aliexpress.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://campaign.aliexpress.com/wow/gcp/app-redirect-terms/index",
         "dnsmpi_links": null
     },
     {
         "url": "https://shopify.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/legal/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "privacy choices",
+                "url": "https://privacy.shopify.com/en"
+            }
+        ]
     },
     {
         "url": "https://nike.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.commerce.nikedotcom.web&country=US&language=en&requestType=redirect",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://www.nike.com/guest/settings/do-not-share-my-data"
+            }
+        ]
     },
     {
         "url": "https://underarmour.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://privacy.underarmour.com/s/topic/0TO4V00000110aRWAQ/privacy-policy?language=en_US",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal information",
+                "url": "https://privacy.underarmour.com/s/article/Privacy-Rights-Request-Form?language=en_US"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "https://privacy.underarmour.com/s/article/Privacy-Rights-Request-Form?language=en_US"
+            }
+        ]
     },
     {
         "url": "https://shein.com",
@@ -281,7 +506,7 @@
     },
     {
         "url": "https://ulta.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.ulta.com/company/privacy#16--washington-health-privacy-notice",
         "dnsmpi_links": null
     },
     {
@@ -306,18 +531,28 @@
     },
     {
         "url": "https://volcom.com",
-        "privacy_policy": null,
+        "privacy_policy": "/pages/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://northface.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.thenorthface.com/en-us/help/terms.html",
+        "dnsmpi_links": [
+            {
+                "text": "thenorthface/privacyyour privacy choices",
+                "url": "/en-us/kids/baby-0-24m/baby-boys-apparel-c348300#trustTool"
+            }
+        ]
     },
     {
         "url": "https://columbia.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.columbia.com/privacy-policy/",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my information",
+                "url": "https://www.columbia.com/do-not-sell-or-share-my-information/"
+            }
+        ]
     },
     {
         "url": "https://patagonia.com",
@@ -326,107 +561,217 @@
     },
     {
         "url": "https://overstock.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://help.overstock.com/support/s/article/Privacy-and-Security-Policy-ostk",
+        "dnsmpi_links": [
+            {
+                "text": "do not share my information/spl",
+                "url": "https://corporate.beyond.com/corporate/privacyrequest"
+            }
+        ]
     },
     {
         "url": "https://safeway.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.albertsonscompanies.com/about-us/our-policies/privacy-policy.html",
+        "dnsmpi_links": [
+            {
+                "text": "cookies & bakery snacks",
+                "url": "/shop/aisles/bread-bakery/cookies-bakery-snacks.html?loc=3132"
+            },
+            {
+                "text": "cookies, snacks & candy",
+                "url": "/shop/aisles/cookies-snacks-candy.html?loc=3132"
+            },
+            {
+                "text": "cookies",
+                "url": "/shop/aisles/cookies-snacks-candy/cookies.html?loc=3132"
+            },
+            {
+                "text": "cscookies, snacks & candy",
+                "url": "/shop/aisles/cookies-snacks-candy.html?loc=3132"
+            },
+            {
+                "text": "your privacy choices",
+                "url": "https://www.albertsonscompanies.com/policies-and-disclosures/privacy-policy/Privacy-Portal/"
+            },
+            {
+                "text": "your privacy choices",
+                "url": "https://www.albertsonscompanies.com/policies-and-disclosures/privacy-policy/Privacy-Portal/"
+            }
+        ]
     },
     {
         "url": "https://wholefoodsmarket.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/site-information/privacy-notice",
+        "dnsmpi_links": [
+            {
+                "text": "your ads privacy choices",
+                "url": "https://www.amazon.com/privacyprefs"
+            },
+            {
+                "text": "consumer health data privacy disclosure",
+                "url": "https://www.wholefoodsmarket.com/site-information/privacy-notice#:~:text=fairly%20and%20lawfully.-,Consumer%20Health%20Data%20Privacy%20Disclosure,-Please%20read%20our"
+            }
+        ]
     },
     {
         "url": "https://wellsfargo.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/privacy-security/?linkLoc=signon",
+        "dnsmpi_links": [
+            {
+                "text": "privacy, cookies, and legal",
+                "url": "/privacy-security/?linkLoc=signon"
+            },
+            {
+                "text": "privacy, cookies, security & legal",
+                "url": "/privacy-security/"
+            },
+            {
+                "text": "do not sell or share my personal information",
+                "url": "/privacy-security/opt-out-notice/"
+            }
+        ]
     },
     {
         "url": "https://chase.com",
-        "privacy_policy": null,
+        "privacy_policy": "/digital/resources/privacy-security",
         "dnsmpi_links": null
     },
     {
         "url": "https://bankofamerica.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/privacy/overview.go?request_locale=en_US",
+        "dnsmpi_links": [
+            {
+                "text": "network advertising initiative's opt-out toolpopup",
+                "url": "https://www.networkadvertising.org/choices"
+            }
+        ]
     },
     {
         "url": "https://capitalone.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.capitalone.com/privacy/",
         "dnsmpi_links": null
     },
     {
         "url": "https://paypal.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/us/privacy-center/home",
+        "dnsmpi_links": [
+            {
+                "text": "cookies",
+                "url": "/myaccount/privacy/cookiePrefs"
+            }
+        ]
     },
     {
         "url": "https://square.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/us/en/legal/general/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "do not share my personal information",
+                "url": "#"
+            }
+        ]
     },
     {
         "url": "https://stripe.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://stripe.com/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://privacy.stripe.com/"
+            }
+        ]
     },
     {
         "url": "https://quickbooks.intuit.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.intuit.com/privacy/",
+        "dnsmpi_links": [
+            {
+                "text": "about cookies",
+                "url": "https://security.intuit.com/intuit-cookie-policy/"
+            },
+            {
+                "text": "manage cookies",
+                "url": "javascript:(function(){\n  if (typeof OneTrust !== 'undefined' && typeof OneTrust.ToggleInfoDisplay === 'function') {\n    OneTrust.ToggleInfoDisplay();\n  } else {\n    intuit_gdpr.showCookiePreference();\n  }\n})();"
+            }
+        ]
     },
     {
         "url": "https://turbotax.intuit.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.intuit.com/privacy/",
+        "dnsmpi_links": [
+            {
+                "text": "about cookies",
+                "url": "https://security.intuit.com/index.php/intuit-cookie-policy/"
+            },
+            {
+                "text": "your california privacy rights",
+                "url": "javascript:OneTrust.ToggleInfoDisplay();"
+            }
+        ]
     },
     {
         "url": "https://squarespace.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://www.dataprivacyframework.gov",
+        "dnsmpi_links": [
+            {
+                "text": "data privacy",
+                "url": "/data-privacy"
+            }
+        ]
     },
     {
         "url": "https://weebly.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://squareup.com/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "opt-out of interest-based advertising",
+                "url": "javascript:;"
+            }
+        ]
     },
     {
         "url": "https://wix.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.wix.com/manage/privacy-security-hub",
         "dnsmpi_links": null
     },
     {
         "url": "https://wordpress.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://automattic.com/privacy/#california-consumer-privacy-act-ccpa",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell or share my personal\u00a0information",
+                "url": "#"
+            }
+        ]
     },
     {
         "url": "https://blogger.com",
-        "privacy_policy": null,
+        "privacy_policy": "/go/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://tumblr.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "/policy/privacy",
+        "dnsmpi_links": [
+            {
+                "text": "do not sell my personal information",
+                "url": "https://help.tumblr.com/hc/articles/360041012973-Your-Advertising-Choices"
+            }
+        ]
     },
     {
         "url": "https://medium.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://policy.medium.com/medium-privacy-policy-f03bf92035c9",
         "dnsmpi_links": null
     },
     {
         "url": "https://substack.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://substack.com/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://github.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://docs.github.com/site-policy/privacy-policies/github-privacy-statement",
         "dnsmpi_links": null
     },
     {
@@ -436,13 +781,18 @@
     },
     {
         "url": "https://bitbucket.org",
-        "privacy_policy": null,
+        "privacy_policy": "http://www.atlassian.com/legal/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://stackoverflow.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://stackoverflow.com/legal/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "cookie policy",
+                "url": "https://stackoverflow.com/legal/cookie-policy"
+            }
+        ]
     },
     {
         "url": "https://quora.com",
@@ -451,8 +801,13 @@
     },
     {
         "url": "https://slack.com",
-        "privacy_policy": null,
-        "dnsmpi_links": null
+        "privacy_policy": "https://slack.com/trust/privacy/privacy-policy",
+        "dnsmpi_links": [
+            {
+                "text": "your privacy choices",
+                "url": "https://www.salesforce.com/form/other/privacy-request/"
+            }
+        ]
     },
     {
         "url": "https://zoom.us",
@@ -461,42 +816,42 @@
     },
     {
         "url": "https://discord.com",
-        "privacy_policy": null,
+        "privacy_policy": "/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://trello.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.atlassian.com/legal/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://asana.com",
-        "privacy_policy": null,
+        "privacy_policy": "/privacy",
         "dnsmpi_links": null
     },
     {
         "url": "https://jira.com",
-        "privacy_policy": null,
+        "privacy_policy": "/legal/privacy-policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://notion.so",
-        "privacy_policy": null,
+        "privacy_policy": "https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac",
         "dnsmpi_links": null
     },
     {
         "url": "https://evernote.com",
-        "privacy_policy": null,
+        "privacy_policy": "/privacy/policy",
         "dnsmpi_links": null
     },
     {
         "url": "https://google.com/drive",
-        "privacy_policy": null,
+        "privacy_policy": "https://policies.google.com/privacy?hl=[hreflang]",
         "dnsmpi_links": null
     },
     {
         "url": "https://onedrive.live.com",
-        "privacy_policy": null,
+        "privacy_policy": "https://privacy.microsoft.com/en-us",
         "dnsmpi_links": null
     },
     {

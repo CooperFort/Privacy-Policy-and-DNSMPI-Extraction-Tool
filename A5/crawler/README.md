@@ -9,7 +9,9 @@ The results are saved in a JSON format.
 ## Prerequisites
 
 Before running the script, ensure that you have the following installed:
+
 **Python 3**
+
 **Required Python libraries**: requests, beautifulsoup4
 
 To install the required libraries, you can use pip:
@@ -39,12 +41,12 @@ to find the privacy policy and DNSMPI links. The script performs the following s
 Place the websites.txt file in the same directory as crawler.py, 
 or adjust the script to point to the correct location of the file.
 
-**Execute the script**:
+- Execute the script**:
     ```bash
     python3 crawler.py
     ```
 
-The results will be saved in scraped_data.json in the following format:
+- The results will be saved in scraped_data.json in the following format:
 
     ```bash
     [

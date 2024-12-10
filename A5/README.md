@@ -1,15 +1,7 @@
-# Assignment 5: Scraping and Analyzing Privacy Policies
+Scraping and Analyzing Privacy Policies
 
 ## Project Members
-
-- **Sidney Atkins**\
-  Hawk ID: statkins
-
 - **Cooper Fort**\
-  Hawk ID: cjfort
-
-- **Ben Schlachtenhaufen**\
-  Hawk ID: bschlachtenhaufen
 
 ### **Project Overview**
 
@@ -110,27 +102,6 @@ Follow the instructions in the README.md file to execute the scripts (RQ1_script
   - `RQ2_link_presence_summary.txt`  
   - `RQ2_link_presence_chart.png`  
   - `research-question3-graph.jpg` 
-
-### **Group Member Contributions**
-
-#### **Sidney Atkins**
-- Created the `research-question3-graph.jpg` heatmap for RQ3.
-- Collaborated with Cooper Fort to write `report.pdf`.
-- Worked with Cooper Fort to create the `a5-video.mp4`.
-- Contributed to the writing of the main `README.md`.
-
-#### **Cooper Fort**
-- Developed all analysis scripts (`RQ1_script.py` and `RQ2_script.py`).
-- Wrote the `README.md` for the analysis folder, providing instructions for running the scripts.
-- Collaborated with Sidney Atkins to write `report.pdf`.
-- Worked with Sidney Atkins to create the `a5-video.mp4`.
-- Contributed to the writing of the main `README.md`.
-
-#### **Ben Schlachtenhaufen**
-- Completed the `crawler.py` script for data collection.
-- Completed the `websites.txt` file.
-- Wrote the `README.md` for the crawler folder, explaining how to use the script.
-- Contributed to the writing of the main `README.md`.
 
 ### Credit Reel
 

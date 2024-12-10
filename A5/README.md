@@ -1,4 +1,4 @@
-Scraping and Analyzing Privacy Policies
+# Scraping and Analyzing Privacy Policies
 
 ## Project Members
 - **Cooper Fort**

@@ -46,10 +46,6 @@ Follow the instructions in the README.md file to execute the scripts (RQ1_script
   - **Description**: The final project report detailing the research questions, methodology, analysis, and conclusions.  
   - **Purpose**: Provides a comprehensive explanation of the project findings.
 
-- **`a5-video.mp4`**  
-  - **Description**: A video walkthrough of the project, demonstrating the analysis process and key results.  
-  - **Purpose**: Visual demonstration of the project for easier understanding.
-
 ---
 
 #### **Crawler Directory**
